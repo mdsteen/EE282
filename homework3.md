@@ -48,62 +48,64 @@ Before you can run the ```bioawk``` command, you must run ```gzip -d dmel-all-r6
 
 Additionally, the data must be sorted so the results from bioawk are accurate. Use ```sort dmel-all-r6.48.gtf > sorted_dmel-all-r6.48.gtf``` to sort the file and direct the sort output to a new file.
 
-Now the bioawk command can be run. Use ```bioawk -c gff '{print $3}' sorted_dmel-all-r6.48.gtf | sort | uniq -c | sort -nr``` to get the total number of features of each type, sorted from the most common to least common. Here are the results: 
+Now the bioawk command can be run. Use ```bioawk -c gff '{print $3}' sorted_dmel-all-r6.48.gtf | sort | uniq -c | sort -nr``` to get the total number of features of each type, sorted from the most common to least common. Here are the results (formatted as a table for easy reading): 
 
-190050 exon
- 163242 CDS
-  46802 5UTR
-  33738 3UTR
-  30885 start_codon
-  30825 stop_codon
-  30799 mRNA
-  17896 gene
-   3053 ncRNA
-    485 miRNA
-    365 pseudogene
-    312 tRNA
-    300 snoRNA
-    262 pre_miRNA
-    115 rRNA
-     32 snRNA
+| count  | feature     |
+|--------|-------------|
+| 190050 | exon        |
+| 163242 | CDS         |
+| 46802  | 5UTR        |
+| 33738  | 3UTR        |
+| 30885  | start_codon |
+| 30825  | stop_codon  |
+| 30799  | mRNA        |
+| 17896  | gene        |
+| 3053   | ncRNA       |
+| 485    | miRNA       |
+| 365    | pseudogene  |
+| 312    | tRNA        |
+| 300    | snoRNA      |
+| 262    | pre_miRNA   |
+| 115    | rRNA        |
+| 32     | snRNA       |
 
-Now, use ```bioawk -c gff '$3 == "gene" {print $1 $7}' sorted_dmel-all-r6.48.gtf | sort | uniq -c | sort -nr``` to get the total number of genes per chromosome arm. Here are the results:
+Now, use ```bioawk -c gff '$3 == "gene" {print $1 $7}' sorted_dmel-all-r6.48.gtf | sort | uniq -c | sort -nr``` to get the total number of genes per chromosome arm. Here are the results (formatted as a table for easy reading):
 
-   2120 3R-
-   2107 3R+
-   1834 2R-
-   1825 2L+
-   1819 2R+
-   1746 3L+
-   1743 3L-
-   1690 2L-
-   1394 X-
-   1314 X+
-     64 Y+
-     58 4-
-     56 4+
-     49 Y-
-     24 mitochondrion_genome+
-     20 rDNA+
-     14 mitochondrion_genome-
-      2 211000022280494-
-      1 Unmapped_Scaffold_8_D1580_D1567-
-      1 Unmapped_Scaffold_8_D1580_D1567+
-      1 rDNA-
-      1 211000022280703+
-      1 211000022280481+
-      1 211000022280347-
-      1 211000022280341-
-      1 211000022280328-
-      1 211000022279681+
-      1 211000022279392-
-      1 211000022279264-
-      1 211000022279188+
-      1 211000022279165-
-      1 211000022278760-
-      1 211000022278449-
-      1 211000022278436-
-      1 211000022278279-
-
-
+| number of genes | chromosome arm                   |
+|-----------------|----------------------------------|
+| 2120            | 3R-                              |
+| 2107            | 3R+                              |
+| 1834            | 2R-                              |
+| 1825            | 2L+                              |
+| 1819            | 2R+                              |
+| 1746            | 3L+                              |
+| 1743            | 3L-                              |
+| 1690            | 2L-                              |
+| 1394            | X-                               |
+| 1314            | X+                               |
+| 64              | Y+                               |
+| 58              | 4-                               |
+| 56              | 4+                               |
+| 49              | Y-                               |
+| 24              | mitochondrion_genome+            |
+| 20              | rDNA+                            |
+| 14              | mitochondrion_genome-            |
+| 2               | 211000022280494-                 |
+| 1               | Unmapped_Scaffold_8_D1580_D1567- |
+| 1               | Unmapped_Scaffold_8_D1580_D1567+ |
+| 1               | rDNA-                            |
+| 1               | 211000022280703+                 |
+| 1               | 211000022280481+                 |
+| 1               | 211000022280347-                 |
+| 1               | 211000022280341-                 |
+| 1               | 211000022280328-                 |
+| 1               | 211000022279681+                 |
+| 1               | 211000022279392-                 |
+| 1               | 211000022279264-                 |
+| 1               | 211000022279188+                 |
+| 1               | 211000022279165-                 |
+| 1               | 211000022278760-                 |
+| 1               | 211000022278449-                 |
+| 1               | 211000022278436-                 |
+| 1               | 211000022278279-                 |
  
