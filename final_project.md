@@ -28,6 +28,8 @@ Calculates percent frequency visitation for each species/site pair
 
 ###Determining the influence of Environmental Factors on Animal Locomotion
 
+###Location Tracking using ezTrack
+
 ##Results
 
 ##Discussion
