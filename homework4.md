@@ -29,24 +29,24 @@ Next, use ```faSize hw4_output_greaterto.fasta``` to get the genome summary. The
 
 #### Sequence Length Distribution Plots
 Sequence length distribution plot for sequences less than or equal to 100kb:
-![less/equal sequence length plot.](Plot_seqlength_lessequal.png)
+
 
 Sequence length distribution plot for sequences greater than 100kb:
-*INSERT*
+
 
 #### GC% Distribution Plots
 GC% Distribution plot for sequences less than or equal to 100kb:
-*INSERT*
+
 
 GC% Distribution plot for sequences greater than 100kb:
-*INSERT*
+
 
 #### Cumulative Sequece Size (plotCDF):
 Cumulative sequence size plot for sequences less than or equal to 100kb:
-*INSERT*
+
 
 Cumulative sequence size plot for sequences greater than 100kb:
-*INSERT*
+
 
 ## Genome Assembly
 A more detialed summary of the code for this portion can be found in the file hw4_genome_assembly.sh
@@ -58,7 +58,7 @@ The assembly was found to have a contig N50 value of 21.7 Mb. This is slightly l
 
 ### Contiguity Plot
 The following contiguity plot was made by comparing the scaffold asse,bly from flybase, the contig assembly from flybase, and the assembly from the hifiasm output:
-*INSERT*
+
 
 ### compleasm analysis
 the tool ```compleasm``` was used to analyze the flybase and hifiasm assemblies. Both assemblies had the same output, shown below:
