@@ -27,22 +27,22 @@ For the purposes of this experiment, it is important to note that the variation 
 ### Site Visitation Frequency
 The following figure shows the count of how many times each species visited each site, or in other words, the site visitation frequency.  Site FC02 was the most visited site overall and was favored by every species, Additionally, site AC03 was the least visited site overall, and was only visited by ⅓ of the species that were observed. While most species visited every site, there were a few exceptions. While the species CALA, LYRU, MEME, ODHE, and PUCO primarily visited every site, species such as DIVI, PRLO, and TATA had more scattered results. It is important to note that there were only two total site visits for TATA (to sites AC01 and FC02), so the small value does not make it visible on the plot.
 
-**INSERT IMAGE HERE**
+![Site Visitation Frequency Plot](SiteFreq_Count_Plot.png)
 
 ### Shade Coverage
 The shade data was subset into four categories: none, partial, full, or night. The following image shows the count for each of the output values per species at each site location. Overall, the preferred level of shade coverage for every species is that of nightfall, while the least preferred level of shade coverage is either partial or no shade. The plot also indicates that URCI had the most visits of spots at nightfall than any other species by a large amount.
 
-**INSERT IMAGE HERE**
+![Shade Coverage Plot](shade_value_plot.png)
 
 ### Temperature
 Box plots for each species, shown in the figure below, were created to determine the range of temperatures at each site. The plots can also be found at a bigger scale in the file “EE282_Final_Temp_Plots” for better ease of view. For most species/site pairs, the average temperature fell between 50-75 fahrenheit, thus there is no major difference between temperature and location. It is also important to note that there are many high value outliers for each species. This is due to the fact that the recorded temperature is camera temperature, not temperature of surroundings. This data is treating camera temperature as an extension of the surrounding temperature, however the cameras can overheat when left in the direct sunlight which causes these high temperature outliers.
 
-**INSERT IMAGE HERE**
+![Temperature Range Plots](allspecies_temp_plot.png)
 
 ### Presence of Rain
 The data collected about the presence of rain in each location was divided into two categories: TRUE if rain was present, and FALSE if rain was absent. A heatmap indicating the count of each output is shown in the figure below. For all the species/site pairings, the absence of rain is the most common outcome. The plot also shows that URCI and LYRU had the most visits to sites where rain is absent compared to other species.
 
-**INSERT IMAGE HERE**
+![Rain Outcome Plot](rain_value_plot.png)
 
 ## Discussion
 This experiment demonstrates the importance of including environmental factors when considering variables that can influence animal movement and behavior patterns. Because each species has their own unique conditions needed to survive, they are constantly adapting to their environment to be as successful as possible. By better understanding how the environment can influence these patterns, we gain information that can be used to understand communities better and can use this knowledge in future studies or conservation efforts. My experiment aimed to explore two hypotheses: (1) that species would favor specific abiotic conditions because of their influence on energy conservation; and (2) biodiversity will change between sites.
